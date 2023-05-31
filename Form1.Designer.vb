@@ -37,6 +37,7 @@ Partial Class Form1
         Me.lblPlyer2Health = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
+        Me.btnDog = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblPlayerName
@@ -162,11 +163,21 @@ Partial Class Form1
         Me.ProgressBar2.Size = New System.Drawing.Size(100, 23)
         Me.ProgressBar2.TabIndex = 14
         '
+        'btnDog
+        '
+        Me.btnDog.Location = New System.Drawing.Point(133, 210)
+        Me.btnDog.Name = "btnDog"
+        Me.btnDog.Size = New System.Drawing.Size(75, 23)
+        Me.btnDog.TabIndex = 15
+        Me.btnDog.Text = "Dog"
+        Me.btnDog.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 363)
+        Me.Controls.Add(Me.btnDog)
         Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.lblPlyer2Health)
@@ -204,4 +215,5 @@ Partial Class Form1
     Friend WithEvents lblPlyer2Health As Label
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents ProgressBar2 As ProgressBar
+    Friend WithEvents btnDog As Button
 End Class

@@ -41,4 +41,8 @@
     Private Sub ResetVars()
         Dont = 5
     End Sub
+
+    Private Sub btnDog_Click(sender As Object, e As EventArgs) Handles btnDog.Click
+
+    End Sub
 End Class

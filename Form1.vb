@@ -20,15 +20,15 @@
         'Player One Active Stats
 
         Dim TwoHealth As Double
-        TwoHealth = txtBxPlayer2Hlth.Text
+        TwoHealth = frmPlyr2Stats.txtBxPlayer2Hlth.Text
         Dim TwoEP As Double
-        TwoEP = txtBxPlayer2EP.Text
+        TwoEP = frmPlyr2Stats.txtBxPlayer2EP.Text
         Dim TwoArmor As Double
-        TwoArmor = txtBxPlayer2Armor.Text
+        TwoArmor = frmPlyr2Stats.txtBxPlayer2Armor.Text
         Dim TwoResilience As Double
-        TwoResilience = txtBxPlayer2Resilience.Text
+        TwoResilience = frmPlyr2Stats.txtBxPlayer2Resilience.Text
         Dim TwoPainLimit As Double
-        TwoPainLimit = txtBxPlayer2PainLimit.Text
+        TwoPainLimit = frmPlyr2Stats.txtBxPlayer2PainLimit.Text
         Dim TwoDmg As Double
         TwoDmg = txtBxPlayer2dmg.Text
 
@@ -52,14 +52,19 @@
             MsgBox("Player Two Wins!")
         End If
 
-        lblPlyer2Health.Text = PlayerOneResault
-        lblPlyer1Health.Text = PlayerTwoResault
+        lblPlyer1Health.Text = PlayerOneResault
+        lblPlyer2Health.Text = PlayerTwoResault
 
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnPlyr1Stats_Click(sender As Object, e As EventArgs) Handles btnPlyr1Stats.Click
         frmPlyr1Stats.Show()
+
+    End Sub
+
+    Private Sub btnPlyr2Stats_Click(sender As Object, e As EventArgs) Handles btnPlyr2Stats.Click
+        frmPlyr2Stats.Show()
 
     End Sub
 End Class

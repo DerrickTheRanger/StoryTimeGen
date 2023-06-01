@@ -1,9 +1,25 @@
 ﻿Public Class battle
+    'Player One Form1 Global Values
+    Dim OneDmg As Double = 100 'Leave it set's a default
+
+    'Player Two Form1 Global Values
+    Dim TwoDmg As Double = 100 'Leave it set's a default
 
 
+
+
+    'Runs at start of form
+    Private Sub Start() Handles Me.Activated
+        txtBxPlayer1Dmg.Text = OneDmg
+
+        txtBxPlayer2dmg.Text = TwoDmg
+    End Sub
 
     Private Sub btnFight_Click(sender As Object, e As EventArgs) Handles btnFight.Click
 
+
+
+        'Player One Active Stats
         Dim OneHealth As Double
         OneHealth = frmPlyr1Stats.txtBxPlayer1Hlth.Text
         Dim OneEP As Double
@@ -14,11 +30,11 @@
         OneResilience = frmPlyr1Stats.txtBxPlayer1Resilience.Text
         Dim OnePainLimit As Double
         OnePainLimit = frmPlyr1Stats.txtBxPlayer1PainLimit.Text
-        Dim OneDmg As Double
-        OneDmg = txtBxPlayer1Dmg.Text
 
-        'Player One Active Stats
 
+
+
+        'Player One Stats
         Dim OneStr As Double
         OneStr = frmPlyr1Stats.txtbxPlyr1Str.Text
         Dim Onepow As Double
@@ -36,8 +52,11 @@
         Dim OneCha As Double
         OneCha = frmPlyr1Stats.txtbxPlyr1Cha.Text
 
-        'Player One Stats
+        OneDmg = OneStr + Onepow + OneEnd + OneVit + OneAgi + OneDex + OneInt + OneCha
 
+        ' OneDmg = txtBxPlayer1Dmg.Text
+
+        'Player Two Active Stats
         Dim TwoHealth As Double
         TwoHealth = frmPlyr2Stats.txtBxPlayer2Hlth.Text
         Dim TwoEP As Double
@@ -48,11 +67,11 @@
         TwoResilience = frmPlyr2Stats.txtBxPlayer2Resilience.Text
         Dim TwoPainLimit As Double
         TwoPainLimit = frmPlyr2Stats.txtBxPlayer2PainLimit.Text
-        Dim TwoDmg As Double
-        TwoDmg = txtBxPlayer2dmg.Text
 
-        'Player Two Active Stats
 
+
+
+        'Player Two Stats
         Dim TwoStr As Double
         TwoStr = frmPlyr2Stats.txtbxPlyr2Str.Text
         Dim Twopow As Double
@@ -70,7 +89,8 @@
         Dim TwoCha As Double
         TwoCha = frmPlyr2Stats.txtbxPlyr2Cha.Text
 
-        'Player Two Stats
+        TwoDmg = TwoStr + Twopow + TwoEnd + TwoVit + TwoAgi + TwoDex + TwoInt + TwoCha
+
 
         Dim WinnerOne As Boolean
         'win thing
@@ -106,4 +126,6 @@
         frmPlyr2Stats.Show()
 
     End Sub
+
+
 End Class

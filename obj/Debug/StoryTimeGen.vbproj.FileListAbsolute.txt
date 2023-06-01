@@ -3,7 +3,6 @@ C:\Users\Derrick\source\repos\StoryTimeGen\bin\Debug\StoryTimeGen.exe
 C:\Users\Derrick\source\repos\StoryTimeGen\bin\Debug\StoryTimeGen.pdb
 C:\Users\Derrick\source\repos\StoryTimeGen\bin\Debug\StoryTimeGen.xml
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.vbproj.AssemblyReference.cache
-C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.Form1.resources
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.Resources.resources
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.vbproj.GenerateResource.cache
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
@@ -24,3 +23,6 @@ G:\visual stuff\obj\Debug\StoryTimeGen.pdb
 G:\visual stuff\obj\Debug\StoryTimeGen.battle.resources
 G:\visual stuff\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources
 G:\visual stuff\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
+C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.battle.resources
+C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
+C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources

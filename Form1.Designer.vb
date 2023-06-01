@@ -54,6 +54,7 @@ Partial Class battle
         '
         Me.txtBxPlayer1Dmg.Location = New System.Drawing.Point(12, 12)
         Me.txtBxPlayer1Dmg.Name = "txtBxPlayer1Dmg"
+        Me.txtBxPlayer1Dmg.ReadOnly = True
         Me.txtBxPlayer1Dmg.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlayer1Dmg.TabIndex = 16
         '
@@ -61,6 +62,7 @@ Partial Class battle
         '
         Me.txtBxPlayer2dmg.Location = New System.Drawing.Point(153, 12)
         Me.txtBxPlayer2dmg.Name = "txtBxPlayer2dmg"
+        Me.txtBxPlayer2dmg.ReadOnly = True
         Me.txtBxPlayer2dmg.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlayer2dmg.TabIndex = 17
         '

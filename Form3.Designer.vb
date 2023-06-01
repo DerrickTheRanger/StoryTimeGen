@@ -34,6 +34,22 @@ Partial Class frmPlyr1Stats
         Me.lblPlayer1name = New System.Windows.Forms.Label()
         Me.txtBxplyr1name = New System.Windows.Forms.TextBox()
         Me.txtBxPlayer1Hlth = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Str = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Pow = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1End = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Vit = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Agi = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Dxt = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Int = New System.Windows.Forms.TextBox()
+        Me.txtbxPlyr1Cha = New System.Windows.Forms.TextBox()
+        Me.lblPlyr1Str = New System.Windows.Forms.Label()
+        Me.lblPlyr1Pow = New System.Windows.Forms.Label()
+        Me.lblPlyr1End = New System.Windows.Forms.Label()
+        Me.lblPlyr1Vit = New System.Windows.Forms.Label()
+        Me.lblPlyr1Agi = New System.Windows.Forms.Label()
+        Me.lblPlyr1Dex = New System.Windows.Forms.Label()
+        Me.lblPlyr1Int = New System.Windows.Forms.Label()
+        Me.lblPlyr1Cha = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LblPainLimit
@@ -48,7 +64,7 @@ Partial Class frmPlyr1Stats
         'LblResilience
         '
         Me.LblResilience.AutoSize = True
-        Me.LblResilience.Location = New System.Drawing.Point(118, 122)
+        Me.LblResilience.Location = New System.Drawing.Point(118, 119)
         Me.LblResilience.Name = "LblResilience"
         Me.LblResilience.Size = New System.Drawing.Size(56, 13)
         Me.LblResilience.TabIndex = 45
@@ -137,11 +153,163 @@ Partial Class frmPlyr1Stats
         Me.txtBxPlayer1Hlth.TabIndex = 35
         Me.txtBxPlayer1Hlth.Text = "50"
         '
+        'txtbxPlyr1Str
+        '
+        Me.txtbxPlyr1Str.Location = New System.Drawing.Point(12, 168)
+        Me.txtbxPlyr1Str.Name = "txtbxPlyr1Str"
+        Me.txtbxPlyr1Str.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Str.TabIndex = 47
+        Me.txtbxPlyr1Str.Text = "1"
+        '
+        'txtbxPlyr1Pow
+        '
+        Me.txtbxPlyr1Pow.Location = New System.Drawing.Point(12, 194)
+        Me.txtbxPlyr1Pow.Name = "txtbxPlyr1Pow"
+        Me.txtbxPlyr1Pow.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Pow.TabIndex = 48
+        Me.txtbxPlyr1Pow.Text = "1"
+        '
+        'txtbxPlyr1End
+        '
+        Me.txtbxPlyr1End.Location = New System.Drawing.Point(12, 220)
+        Me.txtbxPlyr1End.Name = "txtbxPlyr1End"
+        Me.txtbxPlyr1End.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1End.TabIndex = 49
+        Me.txtbxPlyr1End.Text = "1"
+        '
+        'txtbxPlyr1Vit
+        '
+        Me.txtbxPlyr1Vit.Location = New System.Drawing.Point(12, 246)
+        Me.txtbxPlyr1Vit.Name = "txtbxPlyr1Vit"
+        Me.txtbxPlyr1Vit.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Vit.TabIndex = 50
+        Me.txtbxPlyr1Vit.Text = "1"
+        '
+        'txtbxPlyr1Agi
+        '
+        Me.txtbxPlyr1Agi.Location = New System.Drawing.Point(12, 272)
+        Me.txtbxPlyr1Agi.Name = "txtbxPlyr1Agi"
+        Me.txtbxPlyr1Agi.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Agi.TabIndex = 51
+        Me.txtbxPlyr1Agi.Text = "1"
+        '
+        'txtbxPlyr1Dxt
+        '
+        Me.txtbxPlyr1Dxt.Location = New System.Drawing.Point(12, 298)
+        Me.txtbxPlyr1Dxt.Name = "txtbxPlyr1Dxt"
+        Me.txtbxPlyr1Dxt.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Dxt.TabIndex = 52
+        Me.txtbxPlyr1Dxt.Text = "1"
+        '
+        'txtbxPlyr1Int
+        '
+        Me.txtbxPlyr1Int.Location = New System.Drawing.Point(12, 324)
+        Me.txtbxPlyr1Int.Name = "txtbxPlyr1Int"
+        Me.txtbxPlyr1Int.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Int.TabIndex = 53
+        Me.txtbxPlyr1Int.Text = "1"
+        '
+        'txtbxPlyr1Cha
+        '
+        Me.txtbxPlyr1Cha.Location = New System.Drawing.Point(12, 350)
+        Me.txtbxPlyr1Cha.Name = "txtbxPlyr1Cha"
+        Me.txtbxPlyr1Cha.Size = New System.Drawing.Size(100, 20)
+        Me.txtbxPlyr1Cha.TabIndex = 54
+        Me.txtbxPlyr1Cha.Text = "1"
+        '
+        'lblPlyr1Str
+        '
+        Me.lblPlyr1Str.AutoSize = True
+        Me.lblPlyr1Str.Location = New System.Drawing.Point(118, 171)
+        Me.lblPlyr1Str.Name = "lblPlyr1Str"
+        Me.lblPlyr1Str.Size = New System.Drawing.Size(47, 13)
+        Me.lblPlyr1Str.TabIndex = 55
+        Me.lblPlyr1Str.Text = "Strength"
+        '
+        'lblPlyr1Pow
+        '
+        Me.lblPlyr1Pow.AutoSize = True
+        Me.lblPlyr1Pow.Location = New System.Drawing.Point(118, 197)
+        Me.lblPlyr1Pow.Name = "lblPlyr1Pow"
+        Me.lblPlyr1Pow.Size = New System.Drawing.Size(37, 13)
+        Me.lblPlyr1Pow.TabIndex = 56
+        Me.lblPlyr1Pow.Text = "Power"
+        '
+        'lblPlyr1End
+        '
+        Me.lblPlyr1End.AutoSize = True
+        Me.lblPlyr1End.Location = New System.Drawing.Point(118, 223)
+        Me.lblPlyr1End.Name = "lblPlyr1End"
+        Me.lblPlyr1End.Size = New System.Drawing.Size(59, 13)
+        Me.lblPlyr1End.TabIndex = 57
+        Me.lblPlyr1End.Text = "Endurance"
+        '
+        'lblPlyr1Vit
+        '
+        Me.lblPlyr1Vit.AutoSize = True
+        Me.lblPlyr1Vit.Location = New System.Drawing.Point(118, 249)
+        Me.lblPlyr1Vit.Name = "lblPlyr1Vit"
+        Me.lblPlyr1Vit.Size = New System.Drawing.Size(37, 13)
+        Me.lblPlyr1Vit.TabIndex = 58
+        Me.lblPlyr1Vit.Text = "Vitality"
+        '
+        'lblPlyr1Agi
+        '
+        Me.lblPlyr1Agi.AutoSize = True
+        Me.lblPlyr1Agi.Location = New System.Drawing.Point(118, 275)
+        Me.lblPlyr1Agi.Name = "lblPlyr1Agi"
+        Me.lblPlyr1Agi.Size = New System.Drawing.Size(34, 13)
+        Me.lblPlyr1Agi.TabIndex = 59
+        Me.lblPlyr1Agi.Text = "Agility"
+        '
+        'lblPlyr1Dex
+        '
+        Me.lblPlyr1Dex.AutoSize = True
+        Me.lblPlyr1Dex.Location = New System.Drawing.Point(118, 301)
+        Me.lblPlyr1Dex.Name = "lblPlyr1Dex"
+        Me.lblPlyr1Dex.Size = New System.Drawing.Size(48, 13)
+        Me.lblPlyr1Dex.TabIndex = 60
+        Me.lblPlyr1Dex.Text = "Dexterity"
+        '
+        'lblPlyr1Int
+        '
+        Me.lblPlyr1Int.AutoSize = True
+        Me.lblPlyr1Int.Location = New System.Drawing.Point(118, 327)
+        Me.lblPlyr1Int.Name = "lblPlyr1Int"
+        Me.lblPlyr1Int.Size = New System.Drawing.Size(61, 13)
+        Me.lblPlyr1Int.TabIndex = 61
+        Me.lblPlyr1Int.Text = "Intelligence"
+        '
+        'lblPlyr1Cha
+        '
+        Me.lblPlyr1Cha.AutoSize = True
+        Me.lblPlyr1Cha.Location = New System.Drawing.Point(118, 353)
+        Me.lblPlyr1Cha.Name = "lblPlyr1Cha"
+        Me.lblPlyr1Cha.Size = New System.Drawing.Size(50, 13)
+        Me.lblPlyr1Cha.TabIndex = 62
+        Me.lblPlyr1Cha.Text = "Charisma"
+        '
         'frmPlyr1Stats
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(243, 450)
+        Me.ClientSize = New System.Drawing.Size(224, 378)
+        Me.Controls.Add(Me.lblPlyr1Cha)
+        Me.Controls.Add(Me.lblPlyr1Int)
+        Me.Controls.Add(Me.lblPlyr1Dex)
+        Me.Controls.Add(Me.lblPlyr1Agi)
+        Me.Controls.Add(Me.lblPlyr1Vit)
+        Me.Controls.Add(Me.lblPlyr1End)
+        Me.Controls.Add(Me.lblPlyr1Pow)
+        Me.Controls.Add(Me.lblPlyr1Str)
+        Me.Controls.Add(Me.txtbxPlyr1Cha)
+        Me.Controls.Add(Me.txtbxPlyr1Int)
+        Me.Controls.Add(Me.txtbxPlyr1Dxt)
+        Me.Controls.Add(Me.txtbxPlyr1Agi)
+        Me.Controls.Add(Me.txtbxPlyr1Vit)
+        Me.Controls.Add(Me.txtbxPlyr1End)
+        Me.Controls.Add(Me.txtbxPlyr1Pow)
+        Me.Controls.Add(Me.txtbxPlyr1Str)
         Me.Controls.Add(Me.LblPainLimit)
         Me.Controls.Add(Me.LblResilience)
         Me.Controls.Add(Me.Lbl)
@@ -173,4 +341,20 @@ Partial Class frmPlyr1Stats
     Friend WithEvents lblPlayer1name As Label
     Friend WithEvents txtBxplyr1name As TextBox
     Friend WithEvents txtBxPlayer1Hlth As TextBox
+    Friend WithEvents txtbxPlyr1Str As TextBox
+    Friend WithEvents txtbxPlyr1Pow As TextBox
+    Friend WithEvents txtbxPlyr1End As TextBox
+    Friend WithEvents txtbxPlyr1Vit As TextBox
+    Friend WithEvents txtbxPlyr1Agi As TextBox
+    Friend WithEvents txtbxPlyr1Dxt As TextBox
+    Friend WithEvents txtbxPlyr1Int As TextBox
+    Friend WithEvents txtbxPlyr1Cha As TextBox
+    Friend WithEvents lblPlyr1Str As Label
+    Friend WithEvents lblPlyr1Pow As Label
+    Friend WithEvents lblPlyr1End As Label
+    Friend WithEvents lblPlyr1Vit As Label
+    Friend WithEvents lblPlyr1Agi As Label
+    Friend WithEvents lblPlyr1Dex As Label
+    Friend WithEvents lblPlyr1Int As Label
+    Friend WithEvents lblPlyr1Cha As Label
 End Class

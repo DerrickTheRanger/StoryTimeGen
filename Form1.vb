@@ -19,6 +19,25 @@
 
         'Player One Active Stats
 
+        Dim OneStr As Double
+        OneStr = frmPlyr1Stats.txtbxPlyr1Str.Text
+        Dim Onepow As Double
+        Onepow = frmPlyr1Stats.txtbxPlyr1Pow.Text
+        Dim OneEnd As Double
+        OneEnd = frmPlyr1Stats.txtbxPlyr1End.Text
+        Dim OneVit As Double
+        OneVit = frmPlyr1Stats.txtbxPlyr1Vit.Text
+        Dim OneAgi As Double
+        OneAgi = frmPlyr1Stats.txtbxPlyr1Agi.Text
+        Dim OneDex As Double
+        OneDex = frmPlyr1Stats.txtbxPlyr1Dxt.Text
+        Dim OneInt As Double
+        OneInt = frmPlyr1Stats.txtbxPlyr1Int.Text
+        Dim OneCha As Double
+        OneCha = frmPlyr1Stats.txtbxPlyr1Cha.Text
+
+        'Player One Stats
+
         Dim TwoHealth As Double
         TwoHealth = frmPlyr2Stats.txtBxPlayer2Hlth.Text
         Dim TwoEP As Double
@@ -33,6 +52,26 @@
         TwoDmg = txtBxPlayer2dmg.Text
 
         'Player Two Active Stats
+
+        Dim TwoStr As Double
+        TwoStr = frmPlyr2Stats.txtbxPlyr2Str.Text
+        Dim Twopow As Double
+        Twopow = frmPlyr2Stats.txtbxPlyr2Pow.Text
+        Dim TwoEnd As Double
+        TwoEnd = frmPlyr2Stats.txtbxPlyr2End.Text
+        Dim TwoVit As Double
+        TwoVit = frmPlyr2Stats.txtbxPlyr2Vit.Text
+        Dim TwoAgi As Double
+        TwoAgi = frmPlyr2Stats.txtbxPlyr2Agi.Text
+        Dim TwoDex As Double
+        TwoDex = frmPlyr2Stats.txtbxPlyr2Dxt.Text
+        Dim TwoInt As Double
+        TwoInt = frmPlyr2Stats.txtbxPlyr2Int.Text
+        Dim TwoCha As Double
+        TwoCha = frmPlyr2Stats.txtbxPlyr2Cha.Text
+
+        'Player Two Stats
+
         Dim WinnerOne As Boolean
         'win thing
 

@@ -34,7 +34,7 @@ Partial Class battle
         '
         'btnFight
         '
-        Me.btnFight.Location = New System.Drawing.Point(532, 624)
+        Me.btnFight.Location = New System.Drawing.Point(96, 38)
         Me.btnFight.Name = "btnFight"
         Me.btnFight.Size = New System.Drawing.Size(73, 31)
         Me.btnFight.TabIndex = 8
@@ -44,7 +44,7 @@ Partial Class battle
         'lblPlyer2Health
         '
         Me.lblPlyer2Health.AutoSize = True
-        Me.lblPlyer2Health.Location = New System.Drawing.Point(626, 559)
+        Me.lblPlyer2Health.Location = New System.Drawing.Point(177, 79)
         Me.lblPlyer2Health.Name = "lblPlyer2Health"
         Me.lblPlyer2Health.Size = New System.Drawing.Size(73, 13)
         Me.lblPlyer2Health.TabIndex = 11
@@ -52,14 +52,14 @@ Partial Class battle
         '
         'txtBxPlayer1Dmg
         '
-        Me.txtBxPlayer1Dmg.Location = New System.Drawing.Point(557, 116)
+        Me.txtBxPlayer1Dmg.Location = New System.Drawing.Point(12, 12)
         Me.txtBxPlayer1Dmg.Name = "txtBxPlayer1Dmg"
         Me.txtBxPlayer1Dmg.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlayer1Dmg.TabIndex = 16
         '
         'txtBxPlayer2dmg
         '
-        Me.txtBxPlayer2dmg.Location = New System.Drawing.Point(758, 116)
+        Me.txtBxPlayer2dmg.Location = New System.Drawing.Point(153, 12)
         Me.txtBxPlayer2dmg.Name = "txtBxPlayer2dmg"
         Me.txtBxPlayer2dmg.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlayer2dmg.TabIndex = 17
@@ -67,7 +67,7 @@ Partial Class battle
         'lblDmg
         '
         Me.lblDmg.AutoSize = True
-        Me.lblDmg.Location = New System.Drawing.Point(690, 123)
+        Me.lblDmg.Location = New System.Drawing.Point(118, 15)
         Me.lblDmg.Name = "lblDmg"
         Me.lblDmg.Size = New System.Drawing.Size(29, 13)
         Me.lblDmg.TabIndex = 22
@@ -76,7 +76,7 @@ Partial Class battle
         'lblPlyer1Health
         '
         Me.lblPlyer1Health.AutoSize = True
-        Me.lblPlyer1Health.Location = New System.Drawing.Point(448, 559)
+        Me.lblPlyer1Health.Location = New System.Drawing.Point(9, 79)
         Me.lblPlyer1Health.Name = "lblPlyer1Health"
         Me.lblPlyer1Health.Size = New System.Drawing.Size(71, 13)
         Me.lblPlyer1Health.TabIndex = 12
@@ -84,7 +84,7 @@ Partial Class battle
         '
         'btnPlyr1Stats
         '
-        Me.btnPlyr1Stats.Location = New System.Drawing.Point(444, 628)
+        Me.btnPlyr1Stats.Location = New System.Drawing.Point(8, 42)
         Me.btnPlyr1Stats.Name = "btnPlyr1Stats"
         Me.btnPlyr1Stats.Size = New System.Drawing.Size(75, 23)
         Me.btnPlyr1Stats.TabIndex = 35
@@ -93,7 +93,7 @@ Partial Class battle
         '
         'btnPlyr2Stats
         '
-        Me.btnPlyr2Stats.Location = New System.Drawing.Point(611, 628)
+        Me.btnPlyr2Stats.Location = New System.Drawing.Point(175, 42)
         Me.btnPlyr2Stats.Name = "btnPlyr2Stats"
         Me.btnPlyr2Stats.Size = New System.Drawing.Size(75, 23)
         Me.btnPlyr2Stats.TabIndex = 36
@@ -104,7 +104,7 @@ Partial Class battle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(971, 667)
+        Me.ClientSize = New System.Drawing.Size(267, 104)
         Me.Controls.Add(Me.btnPlyr2Stats)
         Me.Controls.Add(Me.btnPlyr1Stats)
         Me.Controls.Add(Me.lblPlyer1Health)

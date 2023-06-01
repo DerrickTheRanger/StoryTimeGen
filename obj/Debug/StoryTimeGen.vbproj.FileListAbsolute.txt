@@ -15,11 +15,11 @@ G:\visual stuff\bin\Debug\StoryTimeGen.exe
 G:\visual stuff\bin\Debug\StoryTimeGen.pdb
 G:\visual stuff\bin\Debug\StoryTimeGen.xml
 G:\visual stuff\obj\Debug\StoryTimeGen.vbproj.AssemblyReference.cache
-G:\visual stuff\obj\Debug\StoryTimeGen.Form1.resources
 G:\visual stuff\obj\Debug\StoryTimeGen.Resources.resources
 G:\visual stuff\obj\Debug\StoryTimeGen.vbproj.GenerateResource.cache
 G:\visual stuff\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
 G:\visual stuff\obj\Debug\StoryTimeGen.exe
 G:\visual stuff\obj\Debug\StoryTimeGen.xml
 G:\visual stuff\obj\Debug\StoryTimeGen.pdb
-G:\visual stuff\obj\Debug\StoryTimeGen.plyer1.resources
+G:\visual stuff\obj\Debug\StoryTimeGen.battle.resources
+G:\visual stuff\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources

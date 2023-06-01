@@ -1,20 +1,46 @@
-﻿Public Class Form1
-
-    Dim Dont As Double = 5
+﻿Public Class battle
 
 
 
     Private Sub btnFight_Click(sender As Object, e As EventArgs) Handles btnFight.Click
-        Dim Onehealth As Double
-        Dim PlayerOneResault As Double
-        Dim Twohealth As Double
-        Dim PlayerTwoResault As Double
-        Dim WinnerOne As Boolean
-        Onehealth = txtBxPlayer1Hlth.Text
-        Twohealth = txtBoxPlayer2Hlth.Text
 
-        PlayerOneResault = Onehealth - Twohealth
-        PlayerTwoResault = Twohealth - Onehealth
+        Dim OneHealth As Double
+        OneHealth = frmPlyr1Stats.txtBxPlayer1Hlth.Text
+        Dim OneEP As Double
+        OneEP = frmPlyr1Stats.txtBxPlayer1EP.Text
+        Dim OneArmor As Double
+        OneArmor = frmPlyr1Stats.txtBxPlayer1Armor.Text
+        Dim OneResilience As Double
+        OneResilience = frmPlyr1Stats.txtBxPlayer1Resilience.Text
+        Dim OnePainLimit As Double
+        OnePainLimit = frmPlyr1Stats.txtBxPlayer1PainLimit.Text
+        Dim OneDmg As Double
+        OneDmg = txtBxPlayer1Dmg.Text
+
+        'Player One Active Stats
+
+        Dim TwoHealth As Double
+        TwoHealth = txtBxPlayer2Hlth.Text
+        Dim TwoEP As Double
+        TwoEP = txtBxPlayer2EP.Text
+        Dim TwoArmor As Double
+        TwoArmor = txtBxPlayer2Armor.Text
+        Dim TwoResilience As Double
+        TwoResilience = txtBxPlayer2Resilience.Text
+        Dim TwoPainLimit As Double
+        TwoPainLimit = txtBxPlayer2PainLimit.Text
+        Dim TwoDmg As Double
+        TwoDmg = txtBxPlayer2dmg.Text
+
+        'Player Two Active Stats
+        Dim WinnerOne As Boolean
+        'win thing
+
+
+        Dim PlayerOneResault As Double
+        Dim PlayerTwoResault As Double
+        PlayerOneResault = OneHealth - TwoDmg
+        PlayerTwoResault = TwoHealth - OneDmg
 
         If PlayerOneResault > PlayerTwoResault Then
             WinnerOne = True
@@ -26,23 +52,14 @@
             MsgBox("Player Two Wins!")
         End If
 
-        lblPlyer1Health.Text = PlayerOneResault
-        lblPlyer2Health.Text = PlayerTwoResault
+        lblPlyer2Health.Text = PlayerOneResault
+        lblPlyer1Health.Text = PlayerTwoResault
 
-        Meow()
 
     End Sub
 
-    Private Sub Meow()
-        Dont = 500
-        MsgBox("Poop")
-    End Sub
-
-    Private Sub ResetVars()
-        Dont = 5
-    End Sub
-
-    Private Sub btnDog_Click(sender As Object, e As EventArgs) Handles btnDog.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        frmPlyr1Stats.Show()
 
     End Sub
 End Class

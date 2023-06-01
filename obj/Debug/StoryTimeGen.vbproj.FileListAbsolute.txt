@@ -22,3 +22,4 @@ G:\visual stuff\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
 G:\visual stuff\obj\Debug\StoryTimeGen.exe
 G:\visual stuff\obj\Debug\StoryTimeGen.xml
 G:\visual stuff\obj\Debug\StoryTimeGen.pdb
+G:\visual stuff\obj\Debug\StoryTimeGen.plyer1.resources

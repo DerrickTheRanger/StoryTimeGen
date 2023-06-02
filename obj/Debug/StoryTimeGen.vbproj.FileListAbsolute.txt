@@ -26,3 +26,19 @@ G:\visual stuff\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.battle.resources
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
 C:\Users\Derrick\source\repos\StoryTimeGen\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources
+G:\story time demo\bin\Debug\StoryTimeGen.exe.config
+G:\story time demo\bin\Debug\StoryTimeGen.exe
+G:\story time demo\bin\Debug\StoryTimeGen.pdb
+G:\story time demo\bin\Debug\StoryTimeGen.xml
+G:\story time demo\obj\Debug\StoryTimeGen.vbproj.AssemblyReference.cache
+G:\story time demo\obj\Debug\StoryTimeGen.battle.resources
+G:\story time demo\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
+G:\story time demo\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources
+G:\story time demo\obj\Debug\StoryTimeGen.Resources.resources
+G:\story time demo\obj\Debug\StoryTimeGen.vbproj.GenerateResource.cache
+G:\story time demo\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
+G:\story time demo\obj\Debug\StoryTimeGen.exe
+G:\story time demo\obj\Debug\StoryTimeGen.xml
+G:\story time demo\obj\Debug\StoryTimeGen.pdb
+G:\story time demo\obj\Debug\StoryTimeGen.FrmPlyr1Wpn.resources
+G:\story time demo\obj\Debug\StoryTimeGen.FrmPlyr2Wpn.resources

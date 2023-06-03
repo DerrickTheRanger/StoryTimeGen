@@ -181,10 +181,13 @@
 
             If Draw = True Then
                 MsgBox("Draw")
+                frmPlyr1Stats.txtBxPlayer1Hlth.Text = PlayerOneResault
+                frmPlyr2Stats.txtBxPlayer2Hlth.Text = PlayerTwoResault
             End If
 
             lblPlyer1Health.Text = PlayerOneResault
             lblPlyer2Health.Text = PlayerTwoResault
+
 
         ElseIf WeaponOne = False Or WeaponTwo = False Then
             MsgBox("Open both Weapons")
@@ -212,5 +215,12 @@
     Private Sub Plyr2Weapon_Click(sender As Object, e As EventArgs) Handles Plyr2Weapon.Click
         WeaponTwo = True
         FrmPlyr2Wpn.Show()
+    End Sub
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        frmPlyr1Stats.txtBxPlayer1Hlth.Text = 50
+        frmPlyr2Stats.txtBxPlayer2Hlth.Text = 50
+        lblPlyer1Health.Text = 50
+        lblPlyer2Health.Text = 50
     End Sub
 End Class

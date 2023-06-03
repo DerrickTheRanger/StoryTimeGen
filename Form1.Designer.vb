@@ -29,6 +29,7 @@ Partial Class battle
         Me.btnPlyr2Stats = New System.Windows.Forms.Button()
         Me.Plyr1Weapon = New System.Windows.Forms.Button()
         Me.Plyr2Weapon = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnFight
@@ -94,11 +95,21 @@ Partial Class battle
         Me.Plyr2Weapon.Text = "Weapon"
         Me.Plyr2Weapon.UseVisualStyleBackColor = True
         '
+        'btnReset
+        '
+        Me.btnReset.Location = New System.Drawing.Point(89, 49)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(73, 23)
+        Me.btnReset.TabIndex = 42
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
+        '
         'battle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(247, 97)
+        Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.Plyr2Weapon)
         Me.Controls.Add(Me.Plyr1Weapon)
         Me.Controls.Add(Me.btnPlyr2Stats)
@@ -119,4 +130,5 @@ Partial Class battle
     Friend WithEvents btnPlyr1Stats As Button
     Friend WithEvents Plyr1Weapon As Button
     Friend WithEvents Plyr2Weapon As Button
+    Friend WithEvents btnReset As Button
 End Class

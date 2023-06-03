@@ -42,3 +42,19 @@ G:\story time demo\obj\Debug\StoryTimeGen.xml
 G:\story time demo\obj\Debug\StoryTimeGen.pdb
 G:\story time demo\obj\Debug\StoryTimeGen.FrmPlyr1Wpn.resources
 G:\story time demo\obj\Debug\StoryTimeGen.FrmPlyr2Wpn.resources
+C:\Users\w\source\repos\bin\Debug\StoryTimeGen.exe.config
+C:\Users\w\source\repos\bin\Debug\StoryTimeGen.exe
+C:\Users\w\source\repos\bin\Debug\StoryTimeGen.pdb
+C:\Users\w\source\repos\bin\Debug\StoryTimeGen.xml
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.vbproj.AssemblyReference.cache
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.battle.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.frmPlyr2Stats.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.frmPlyr1Stats.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.FrmPlyr1Wpn.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.FrmPlyr2Wpn.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.Resources.resources
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.vbproj.GenerateResource.cache
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.exe
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.xml
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.pdb

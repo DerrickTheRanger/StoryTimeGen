@@ -1,6 +1,7 @@
 ﻿Public Class FrmPlyr1Wpn
     Private Sub FrmPlyr1Wpn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
         Dim HeadLength As Double
         HeadLength = txtBxPlyr1WpnHL.Text
         Dim HiltLength As Double
@@ -16,6 +17,7 @@
         Dim Dmg As Double
         Dmg = (HeadLength + HiltLength - Hold) * WeaponMass
         txtBxPlyr1WpnD.Text = Dmg
+
 
     End Sub
 

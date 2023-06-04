@@ -148,22 +148,28 @@
             TwoDmg = FrmPlyr2Wpn.txtBxPlyr2WpnD.Text + TwoStr
 
 
-
             'Win Detection Code
             Dim WinnerOne As Boolean
             Dim WinnerTwo As Boolean
             Dim Draw As Boolean
 
-            Dim PlayerOneResault As Double
-            Dim PlayerTwoResault As Double
-            PlayerOneResault = OneHealth - TwoDmg
-            PlayerTwoResault = TwoHealth - OneDmg
+            Dim PlayerOneHealthResault As Double
+            Dim PlayerOneEPResault As Double
+            'Dim PlayerOnePainResault As Double
+            Dim PlayerTwoHealthResault As Double
+            Dim PlayerTwoEPResault As Double
+            'Dim PlayerTwoPainResault As Double
+            PlayerOneHealthResault = OneHealth - TwoDmg
+            PlayerOneEPResault = OneEP - FrmPlyr1Wpn.txtBxPlyr1WpnBC.Text
+            PlayerTwoHealthResault = TwoHealth - OneDmg
+            PlayerTwoEPResault = TwoEP - FrmPlyr2Wpn.txtBxPlyr2WpnBC.Text
+            'PlayerTwoPainResault = FrmPlyr1Wpn.txtBxPlyr1WpnP.Text - OneResilience
 
-            If PlayerTwoResault < 1 Then
+            If PlayerTwoHealthResault < 1 Or PlayerTwoEPResault < 1 Then
                 WinnerOne = True
             End If
 
-            If PlayerOneResault < 1 Then
+            If PlayerOneHealthResault < 1 Or PlayerOneEPResault < 1 Then
                 WinnerTwo = True
             End If
 
@@ -181,12 +187,16 @@
 
             If Draw = True Then
                 MsgBox("Draw")
-                frmPlyr1Stats.txtBxPlayer1Hlth.Text = PlayerOneResault
-                frmPlyr2Stats.txtBxPlayer2Hlth.Text = PlayerTwoResault
+                frmPlyr1Stats.txtBxPlayer1Hlth.Text = PlayerOneHealthResault
+                frmPlyr1Stats.txtBxPlayer1EP.Text = PlayerOneEPResault
+                frmPlyr2Stats.txtBxPlayer2Hlth.Text = PlayerTwoHealthResault
+                frmPlyr2Stats.txtBxPlayer2EP.Text = PlayerTwoEPResault
             End If
 
-            lblPlyer1Health.Text = PlayerOneResault
-            lblPlyer2Health.Text = PlayerTwoResault
+            lblPlyr1Hlth.Text = PlayerOneHealthResault
+            lblPlyr2Hlth.Text = PlayerTwoHealthResault
+            lblPlyr1EP.Text = PlayerOneEPResault
+            lblPlyr2EP.Text = PlayerTwoEPResault
 
 
         ElseIf WeaponOne = False Or WeaponTwo = False Then
@@ -220,7 +230,9 @@
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
         frmPlyr1Stats.txtBxPlayer1Hlth.Text = 50
         frmPlyr2Stats.txtBxPlayer2Hlth.Text = 50
-        lblPlyer1Health.Text = 50
-        lblPlyer2Health.Text = 50
+        lblPlyr1Hlth.Text = 50
+        lblPlyr2Hlth.Text = 50
     End Sub
+
+
 End Class

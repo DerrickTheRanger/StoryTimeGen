@@ -75,12 +75,16 @@
         TwoInt = frmPlyr2Stats.txtbxPlyr2Int.Text
         Dim TwoCha As Double
         TwoCha = frmPlyr2Stats.txtbxPlyr2Cha.Text
+        pbrPlyr2P.Maximum = TwoPainLimit
 
     End Sub
 
     Private Sub btnFight_Click(sender As Object, e As EventArgs) Handles btnFight.Click
 
         If WeaponOne = True And WeaponTwo = True Then
+
+
+
             'Player One Active Stats
             Dim OneHealth As Double
             OneHealth = frmPlyr1Stats.txtBxPlayer1Hlth.Text
@@ -148,6 +152,7 @@
             TwoDmg = FrmPlyr2Wpn.txtBxPlyr2WpnD.Text + TwoStr
 
 
+
             'Win Detection Code
             Dim WinnerOne As Boolean
             Dim WinnerTwo As Boolean
@@ -155,52 +160,62 @@
 
             Dim PlayerOneHealthResault As Double
             Dim PlayerOneEPResault As Double
-            'Dim PlayerOnePainResault As Double
+            Dim PlayerOnePainResault As Double
             Dim PlayerTwoHealthResault As Double
             Dim PlayerTwoEPResault As Double
-            'Dim PlayerTwoPainResault As Double
+            Dim PlayerTwoPainResault As Double
             PlayerOneHealthResault = OneHealth - TwoDmg
             PlayerOneEPResault = OneEP - FrmPlyr1Wpn.txtBxPlyr1WpnBC.Text
+            PlayerOnePainResault = FrmPlyr2Wpn.txtBxPlyr2WpnP.Text - OneResilience
             PlayerTwoHealthResault = TwoHealth - OneDmg
             PlayerTwoEPResault = TwoEP - FrmPlyr2Wpn.txtBxPlyr2WpnBC.Text
-            'PlayerTwoPainResault = FrmPlyr1Wpn.txtBxPlyr1WpnP.Text - OneResilience
+            PlayerTwoPainResault = FrmPlyr1Wpn.txtBxPlyr1WpnP.Text - TwoResilience
+            pbrPlyr2P.Value = pbrPlyr2P.Value + PlayerTwoPainResault
+            pbrPlyr1P.Value = pbrPlyr1P.Value + PlayerOnePainResault
 
-            If PlayerTwoHealthResault < 1 Or PlayerTwoEPResault < 1 Then
+
+
+            If PlayerTwoHealthResault < 1 Or PlayerTwoEPResault < 1 Or pbrPlyr2P.Value > TwoPainLimit Then
                 WinnerOne = True
             End If
 
-            If PlayerOneHealthResault < 1 Or PlayerOneEPResault < 1 Then
+            If PlayerOneHealthResault < 1 Or PlayerOneEPResault < 1 Or pbrPlyr1P.Value > OnePainLimit Then
                 WinnerTwo = True
             End If
 
-            If WinnerOne = True Then
-                MsgBox("Player One Wins!")
+            If WinnerOne = True Xor WinnerTwo = True Then
+                If WinnerOne = True Then
+                    MsgBox("Player One Wins!")
+                ElseIf WinnerOne = True And WinnerTwo = True Then
+                    MsgBox("Draw")
+                End If
+
+                If WinnerTwo = True Then
+                    MsgBox("Player Two Wins!")
+                End If
+
+                If WinnerOne = False And WinnerTwo = False Then
+                    Draw = True
+                End If
+
+                If Draw = True Then
+                    MsgBox("The battle continues")
+                    frmPlyr1Stats.txtBxPlayer1Hlth.Text = PlayerOneHealthResault
+                    frmPlyr1Stats.txtBxPlayer1EP.Text = PlayerOneEPResault
+                    frmPlyr2Stats.txtBxPlayer2Hlth.Text = PlayerTwoHealthResault
+                    frmPlyr2Stats.txtBxPlayer2EP.Text = PlayerTwoEPResault
+                End If
+
+                lblPlyr1Hlth.Text = PlayerOneHealthResault
+                lblPlyr2Hlth.Text = PlayerTwoHealthResault
+                lblPlyr1EP.Text = PlayerOneEPResault
+                lblPlyr2EP.Text = PlayerTwoEPResault
+
+
+            ElseIf WeaponOne = False Or WeaponTwo = False Then
+                MsgBox("Open both Weapons")
+
             End If
-
-            If WinnerTwo = True Then
-                MsgBox("Player Two Wins!")
-            End If
-
-            If WinnerOne = False And WinnerTwo = False Then
-                Draw = True
-            End If
-
-            If Draw = True Then
-                MsgBox("Draw")
-                frmPlyr1Stats.txtBxPlayer1Hlth.Text = PlayerOneHealthResault
-                frmPlyr1Stats.txtBxPlayer1EP.Text = PlayerOneEPResault
-                frmPlyr2Stats.txtBxPlayer2Hlth.Text = PlayerTwoHealthResault
-                frmPlyr2Stats.txtBxPlayer2EP.Text = PlayerTwoEPResault
-            End If
-
-            lblPlyr1Hlth.Text = PlayerOneHealthResault
-            lblPlyr2Hlth.Text = PlayerTwoHealthResault
-            lblPlyr1EP.Text = PlayerOneEPResault
-            lblPlyr2EP.Text = PlayerTwoEPResault
-
-
-        ElseIf WeaponOne = False Or WeaponTwo = False Then
-            MsgBox("Open both Weapons")
         End If
 
     End Sub

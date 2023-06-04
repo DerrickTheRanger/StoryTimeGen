@@ -167,7 +167,7 @@ Partial Class battle
         '
         Me.pbrPlyr2P.Location = New System.Drawing.Point(146, 105)
         Me.pbrPlyr2P.Name = "pbrPlyr2P"
-        Me.pbrPlyr2P.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.pbrPlyr2P.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.pbrPlyr2P.Size = New System.Drawing.Size(97, 23)
         Me.pbrPlyr2P.TabIndex = 50
         '

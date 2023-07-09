@@ -58,3 +58,4 @@ C:\Users\w\source\repos\obj\Debug\StoryTimeGen.vbproj.CoreCompileInputs.cache
 C:\Users\w\source\repos\obj\Debug\StoryTimeGen.exe
 C:\Users\w\source\repos\obj\Debug\StoryTimeGen.xml
 C:\Users\w\source\repos\obj\Debug\StoryTimeGen.pdb
+C:\Users\w\source\repos\obj\Debug\StoryTimeGen.frmActionPlyr1.resources

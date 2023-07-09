@@ -9,14 +9,18 @@
         HiltLength = txtBxPlyr2WpnHtL.Text
         Dim Hold As Double
         Hold = txtBxPlyr2WpnH.Text
-        Dim WeaponMass As Double
-        WeaponMass = txtBxPlyr2WpnWM.Text
+        Dim HeadMass As Double
+        HeadMass = txtBxPlyr2WpnHM.Text
+        Dim HiltMass As Double
+        HiltMass = txtBxPlyr2WpnHtM.Text
+        Dim Balince As Double
+        Balince = txtBxPlyr2WpnB.Text
         Dim BaseCost As Double
         BaseCost = txtBxPlyr2WpnBC.Text
         Dim Pain As Double
         Pain = txtBxPlyr2WpnP.Text
         Dim Dmg As Double
-        Dmg = (HeadLength + HiltLength - Hold) * WeaponMass
+        Dmg = ((HeadLength + HiltLength - Hold) * HeadMass) * (Balince * 2 * 3)
         txtBxPlyr2WpnD.Text = Dmg
 
 
@@ -30,16 +34,19 @@
         HiltLength = txtBxPlyr2WpnHtL.Text
         Dim Hold As Double
         Hold = txtBxPlyr2WpnH.Text
-        Dim WeaponMass As Double
-        WeaponMass = txtBxPlyr2WpnWM.Text
+        Dim HeadMass As Double
+        HeadMass = txtBxPlyr2WpnHM.Text
+        Dim HiltMass As Double
+        HiltMass = txtBxPlyr2WpnHtM.Text
+        Dim Balince As Double
+        Balince = txtBxPlyr2WpnB.Text
         Dim BaseCost As Double
         BaseCost = txtBxPlyr2WpnBC.Text
         Dim Pain As Double
         Pain = txtBxPlyr2WpnP.Text
         Dim Dmg As Double
-        Dmg = (HeadLength + HiltLength - Hold) * WeaponMass
+        Dmg = ((HeadLength + HiltLength - Hold) * HeadMass) * (Balince * 2 * 3)
         txtBxPlyr2WpnD.Text = Dmg
 
     End Sub
-
 End Class

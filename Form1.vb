@@ -1,5 +1,5 @@
 ﻿Public Class battle
-    'why is the number 100
+
     'Player One Form1 Global Values
     Dim OneDmg As Double = 100 'Leave it set's a default
 
@@ -158,12 +158,16 @@
             Dim WinnerTwo As Boolean
             Dim Draw As Boolean
 
+
+
             Dim PlayerOneHealthResault As Double
             Dim PlayerOneEPResault As Double
             Dim PlayerOnePainResault As Double
+
             Dim PlayerTwoHealthResault As Double
             Dim PlayerTwoEPResault As Double
             Dim PlayerTwoPainResault As Double
+
             PlayerOneHealthResault = OneHealth - TwoDmg
             PlayerOneEPResault = OneEP - FrmPlyr1Wpn.txtBxPlyr1WpnBC.Text
             PlayerOnePainResault = FrmPlyr2Wpn.txtBxPlyr2WpnP.Text - OneResilience
@@ -249,5 +253,7 @@
         lblPlyr2Hlth.Text = 50
     End Sub
 
-
+    Private Sub btnActionPlyr1_Click(sender As Object, e As EventArgs) Handles btnActionPlyr1.Click
+        frmActionPlyr1.Show()
+    End Sub
 End Class

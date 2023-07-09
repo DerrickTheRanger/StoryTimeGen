@@ -34,16 +34,20 @@ Partial Class FrmPlyr2Wpn
         Me.txtBxPlyr2WpnD = New System.Windows.Forms.TextBox()
         Me.txtBxPlyr2WpnP = New System.Windows.Forms.TextBox()
         Me.txtBxPlyr2WpnBC = New System.Windows.Forms.TextBox()
-        Me.txtBxPlyr2WpnWM = New System.Windows.Forms.TextBox()
+        Me.txtBxPlyr2WpnHM = New System.Windows.Forms.TextBox()
         Me.txtBxPlyr2WpnH = New System.Windows.Forms.TextBox()
         Me.txtBxPlyr2WpnHtL = New System.Windows.Forms.TextBox()
         Me.txtBxPlyr2WpnHL = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtBxPlyr2WpnHtM = New System.Windows.Forms.TextBox()
+        Me.txtBxPlyr2WpnB = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'BtnCalculateDmg
         '
-        Me.BtnCalculateDmg.Location = New System.Drawing.Point(12, 220)
+        Me.BtnCalculateDmg.Location = New System.Drawing.Point(12, 268)
         Me.BtnCalculateDmg.Name = "BtnCalculateDmg"
         Me.BtnCalculateDmg.Size = New System.Drawing.Size(100, 23)
         Me.BtnCalculateDmg.TabIndex = 35
@@ -53,7 +57,7 @@ Partial Class FrmPlyr2Wpn
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(118, 197)
+        Me.Label7.Location = New System.Drawing.Point(118, 245)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(29, 13)
         Me.Label7.TabIndex = 34
@@ -62,7 +66,7 @@ Partial Class FrmPlyr2Wpn
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(118, 171)
+        Me.Label8.Location = New System.Drawing.Point(118, 219)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(28, 13)
         Me.Label8.TabIndex = 33
@@ -71,7 +75,7 @@ Partial Class FrmPlyr2Wpn
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(118, 145)
+        Me.Label5.Location = New System.Drawing.Point(118, 193)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(55, 13)
         Me.Label5.TabIndex = 32
@@ -82,9 +86,9 @@ Partial Class FrmPlyr2Wpn
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(118, 119)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(76, 13)
+        Me.Label6.Size = New System.Drawing.Size(61, 13)
         Me.Label6.TabIndex = 31
-        Me.Label6.Text = "Weapon Mass"
+        Me.Label6.Text = "Head Mass"
         '
         'Label3
         '
@@ -124,14 +128,14 @@ Partial Class FrmPlyr2Wpn
         '
         'txtBxPlyr2WpnD
         '
-        Me.txtBxPlyr2WpnD.Location = New System.Drawing.Point(12, 194)
+        Me.txtBxPlyr2WpnD.Location = New System.Drawing.Point(12, 242)
         Me.txtBxPlyr2WpnD.Name = "txtBxPlyr2WpnD"
         Me.txtBxPlyr2WpnD.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlyr2WpnD.TabIndex = 26
         '
         'txtBxPlyr2WpnP
         '
-        Me.txtBxPlyr2WpnP.Location = New System.Drawing.Point(12, 168)
+        Me.txtBxPlyr2WpnP.Location = New System.Drawing.Point(12, 216)
         Me.txtBxPlyr2WpnP.Name = "txtBxPlyr2WpnP"
         Me.txtBxPlyr2WpnP.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlyr2WpnP.TabIndex = 25
@@ -139,19 +143,19 @@ Partial Class FrmPlyr2Wpn
         '
         'txtBxPlyr2WpnBC
         '
-        Me.txtBxPlyr2WpnBC.Location = New System.Drawing.Point(12, 142)
+        Me.txtBxPlyr2WpnBC.Location = New System.Drawing.Point(12, 190)
         Me.txtBxPlyr2WpnBC.Name = "txtBxPlyr2WpnBC"
         Me.txtBxPlyr2WpnBC.Size = New System.Drawing.Size(100, 20)
         Me.txtBxPlyr2WpnBC.TabIndex = 24
         Me.txtBxPlyr2WpnBC.Text = "10"
         '
-        'txtBxPlyr2WpnWM
+        'txtBxPlyr2WpnHM
         '
-        Me.txtBxPlyr2WpnWM.Location = New System.Drawing.Point(12, 116)
-        Me.txtBxPlyr2WpnWM.Name = "txtBxPlyr2WpnWM"
-        Me.txtBxPlyr2WpnWM.Size = New System.Drawing.Size(100, 20)
-        Me.txtBxPlyr2WpnWM.TabIndex = 23
-        Me.txtBxPlyr2WpnWM.Text = "1.5"
+        Me.txtBxPlyr2WpnHM.Location = New System.Drawing.Point(12, 116)
+        Me.txtBxPlyr2WpnHM.Name = "txtBxPlyr2WpnHM"
+        Me.txtBxPlyr2WpnHM.Size = New System.Drawing.Size(100, 20)
+        Me.txtBxPlyr2WpnHM.TabIndex = 23
+        Me.txtBxPlyr2WpnHM.Text = "1.2"
         '
         'txtBxPlyr2WpnH
         '
@@ -184,11 +188,49 @@ Partial Class FrmPlyr2Wpn
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 19
         '
+        'txtBxPlyr2WpnHtM
+        '
+        Me.txtBxPlyr2WpnHtM.Location = New System.Drawing.Point(12, 139)
+        Me.txtBxPlyr2WpnHtM.Name = "txtBxPlyr2WpnHtM"
+        Me.txtBxPlyr2WpnHtM.Size = New System.Drawing.Size(100, 20)
+        Me.txtBxPlyr2WpnHtM.TabIndex = 36
+        Me.txtBxPlyr2WpnHtM.Text = "0.5"
+        '
+        'txtBxPlyr2WpnB
+        '
+        Me.txtBxPlyr2WpnB.Location = New System.Drawing.Point(12, 165)
+        Me.txtBxPlyr2WpnB.Name = "txtBxPlyr2WpnB"
+        Me.txtBxPlyr2WpnB.Size = New System.Drawing.Size(100, 20)
+        Me.txtBxPlyr2WpnB.TabIndex = 37
+        Me.txtBxPlyr2WpnB.Text = "3"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(118, 142)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(50, 13)
+        Me.Label9.TabIndex = 38
+        Me.Label9.Text = "Hilt Mass"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(118, 168)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(42, 13)
+        Me.Label10.TabIndex = 39
+        Me.Label10.Text = "Balince"
+        '
         'FrmPlyr2Wpn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(214, 245)
+        Me.ClientSize = New System.Drawing.Size(214, 321)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.txtBxPlyr2WpnB)
+        Me.Controls.Add(Me.txtBxPlyr2WpnHtM)
         Me.Controls.Add(Me.BtnCalculateDmg)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
@@ -201,7 +243,7 @@ Partial Class FrmPlyr2Wpn
         Me.Controls.Add(Me.txtBxPlyr2WpnD)
         Me.Controls.Add(Me.txtBxPlyr2WpnP)
         Me.Controls.Add(Me.txtBxPlyr2WpnBC)
-        Me.Controls.Add(Me.txtBxPlyr2WpnWM)
+        Me.Controls.Add(Me.txtBxPlyr2WpnHM)
         Me.Controls.Add(Me.txtBxPlyr2WpnH)
         Me.Controls.Add(Me.txtBxPlyr2WpnHtL)
         Me.Controls.Add(Me.txtBxPlyr2WpnHL)
@@ -225,9 +267,13 @@ Partial Class FrmPlyr2Wpn
     Friend WithEvents txtBxPlyr2WpnD As TextBox
     Friend WithEvents txtBxPlyr2WpnP As TextBox
     Friend WithEvents txtBxPlyr2WpnBC As TextBox
-    Friend WithEvents txtBxPlyr2WpnWM As TextBox
+    Friend WithEvents txtBxPlyr2WpnHM As TextBox
     Friend WithEvents txtBxPlyr2WpnH As TextBox
     Friend WithEvents txtBxPlyr2WpnHtL As TextBox
     Friend WithEvents txtBxPlyr2WpnHL As TextBox
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtBxPlyr2WpnHtM As TextBox
+    Friend WithEvents txtBxPlyr2WpnB As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
 End Class

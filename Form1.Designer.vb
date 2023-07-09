@@ -37,6 +37,13 @@ Partial Class battle
         Me.LblPain = New System.Windows.Forms.Label()
         Me.pbrPlyr2P = New System.Windows.Forms.ProgressBar()
         Me.pbrPlyr1P = New System.Windows.Forms.ProgressBar()
+        Me.GupBxOutCome = New System.Windows.Forms.GroupBox()
+        Me.GupBxPlyr2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnActionPlyr1 = New System.Windows.Forms.Button()
+        Me.GupBxOutCome.SuspendLayout()
+        Me.GupBxPlyr2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnFight
@@ -51,7 +58,7 @@ Partial Class battle
         'lblPlyr2Hlth
         '
         Me.lblPlyr2Hlth.AutoSize = True
-        Me.lblPlyr2Hlth.Location = New System.Drawing.Point(170, 76)
+        Me.lblPlyr2Hlth.Location = New System.Drawing.Point(164, 14)
         Me.lblPlyr2Hlth.Name = "lblPlyr2Hlth"
         Me.lblPlyr2Hlth.Size = New System.Drawing.Size(73, 13)
         Me.lblPlyr2Hlth.TabIndex = 11
@@ -61,7 +68,7 @@ Partial Class battle
         'lblPlyr1Hlth
         '
         Me.lblPlyr1Hlth.AutoSize = True
-        Me.lblPlyr1Hlth.Location = New System.Drawing.Point(5, 76)
+        Me.lblPlyr1Hlth.Location = New System.Drawing.Point(-1, 14)
         Me.lblPlyr1Hlth.Name = "lblPlyr1Hlth"
         Me.lblPlyr1Hlth.Size = New System.Drawing.Size(71, 13)
         Me.lblPlyr1Hlth.TabIndex = 12
@@ -70,25 +77,25 @@ Partial Class battle
         '
         'btnPlyr1Stats
         '
-        Me.btnPlyr1Stats.Location = New System.Drawing.Point(8, 16)
+        Me.btnPlyr1Stats.Location = New System.Drawing.Point(0, 19)
         Me.btnPlyr1Stats.Name = "btnPlyr1Stats"
         Me.btnPlyr1Stats.Size = New System.Drawing.Size(75, 23)
         Me.btnPlyr1Stats.TabIndex = 35
-        Me.btnPlyr1Stats.Text = "Player1"
+        Me.btnPlyr1Stats.Text = "Stats"
         Me.btnPlyr1Stats.UseVisualStyleBackColor = True
         '
         'btnPlyr2Stats
         '
-        Me.btnPlyr2Stats.Location = New System.Drawing.Point(168, 16)
+        Me.btnPlyr2Stats.Location = New System.Drawing.Point(0, 19)
         Me.btnPlyr2Stats.Name = "btnPlyr2Stats"
         Me.btnPlyr2Stats.Size = New System.Drawing.Size(75, 23)
         Me.btnPlyr2Stats.TabIndex = 36
-        Me.btnPlyr2Stats.Text = "Player2"
+        Me.btnPlyr2Stats.Text = "Stats"
         Me.btnPlyr2Stats.UseVisualStyleBackColor = True
         '
         'Plyr1Weapon
         '
-        Me.Plyr1Weapon.Location = New System.Drawing.Point(8, 45)
+        Me.Plyr1Weapon.Location = New System.Drawing.Point(0, 48)
         Me.Plyr1Weapon.Name = "Plyr1Weapon"
         Me.Plyr1Weapon.Size = New System.Drawing.Size(75, 23)
         Me.Plyr1Weapon.TabIndex = 40
@@ -97,7 +104,7 @@ Partial Class battle
         '
         'Plyr2Weapon
         '
-        Me.Plyr2Weapon.Location = New System.Drawing.Point(168, 45)
+        Me.Plyr2Weapon.Location = New System.Drawing.Point(0, 48)
         Me.Plyr2Weapon.Name = "Plyr2Weapon"
         Me.Plyr2Weapon.Size = New System.Drawing.Size(75, 23)
         Me.Plyr2Weapon.TabIndex = 41
@@ -116,7 +123,7 @@ Partial Class battle
         'LblHlth
         '
         Me.LblHlth.AutoSize = True
-        Me.LblHlth.Location = New System.Drawing.Point(102, 75)
+        Me.LblHlth.Location = New System.Drawing.Point(96, 13)
         Me.LblHlth.Name = "LblHlth"
         Me.LblHlth.Size = New System.Drawing.Size(38, 13)
         Me.LblHlth.TabIndex = 43
@@ -126,7 +133,7 @@ Partial Class battle
         'LblEP
         '
         Me.LblEP.AutoSize = True
-        Me.LblEP.Location = New System.Drawing.Point(112, 89)
+        Me.LblEP.Location = New System.Drawing.Point(106, 27)
         Me.LblEP.Name = "LblEP"
         Me.LblEP.Size = New System.Drawing.Size(21, 13)
         Me.LblEP.TabIndex = 46
@@ -136,7 +143,7 @@ Partial Class battle
         'lblPlyr1EP
         '
         Me.lblPlyr1EP.AutoSize = True
-        Me.lblPlyr1EP.Location = New System.Drawing.Point(5, 89)
+        Me.lblPlyr1EP.Location = New System.Drawing.Point(-1, 27)
         Me.lblPlyr1EP.Name = "lblPlyr1EP"
         Me.lblPlyr1EP.Size = New System.Drawing.Size(56, 13)
         Me.lblPlyr1EP.TabIndex = 45
@@ -146,7 +153,7 @@ Partial Class battle
         'lblPlyr2EP
         '
         Me.lblPlyr2EP.AutoSize = True
-        Me.lblPlyr2EP.Location = New System.Drawing.Point(170, 89)
+        Me.lblPlyr2EP.Location = New System.Drawing.Point(164, 27)
         Me.lblPlyr2EP.Name = "lblPlyr2EP"
         Me.lblPlyr2EP.Size = New System.Drawing.Size(56, 13)
         Me.lblPlyr2EP.TabIndex = 44
@@ -156,7 +163,7 @@ Partial Class battle
         'LblPain
         '
         Me.LblPain.AutoSize = True
-        Me.LblPain.Location = New System.Drawing.Point(112, 105)
+        Me.LblPain.Location = New System.Drawing.Point(106, 43)
         Me.LblPain.Name = "LblPain"
         Me.LblPain.Size = New System.Drawing.Size(28, 13)
         Me.LblPain.TabIndex = 49
@@ -165,7 +172,7 @@ Partial Class battle
         '
         'pbrPlyr2P
         '
-        Me.pbrPlyr2P.Location = New System.Drawing.Point(146, 105)
+        Me.pbrPlyr2P.Location = New System.Drawing.Point(140, 43)
         Me.pbrPlyr2P.Name = "pbrPlyr2P"
         Me.pbrPlyr2P.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.pbrPlyr2P.Size = New System.Drawing.Size(97, 23)
@@ -173,36 +180,79 @@ Partial Class battle
         '
         'pbrPlyr1P
         '
-        Me.pbrPlyr1P.Location = New System.Drawing.Point(8, 105)
+        Me.pbrPlyr1P.Location = New System.Drawing.Point(2, 43)
         Me.pbrPlyr1P.Name = "pbrPlyr1P"
         Me.pbrPlyr1P.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.pbrPlyr1P.Size = New System.Drawing.Size(97, 23)
         Me.pbrPlyr1P.TabIndex = 51
         '
+        'GupBxOutCome
+        '
+        Me.GupBxOutCome.Controls.Add(Me.LblHlth)
+        Me.GupBxOutCome.Controls.Add(Me.pbrPlyr2P)
+        Me.GupBxOutCome.Controls.Add(Me.lblPlyr2Hlth)
+        Me.GupBxOutCome.Controls.Add(Me.pbrPlyr1P)
+        Me.GupBxOutCome.Controls.Add(Me.lblPlyr1Hlth)
+        Me.GupBxOutCome.Controls.Add(Me.LblPain)
+        Me.GupBxOutCome.Controls.Add(Me.lblPlyr2EP)
+        Me.GupBxOutCome.Controls.Add(Me.LblEP)
+        Me.GupBxOutCome.Controls.Add(Me.lblPlyr1EP)
+        Me.GupBxOutCome.Location = New System.Drawing.Point(8, 157)
+        Me.GupBxOutCome.Name = "GupBxOutCome"
+        Me.GupBxOutCome.Size = New System.Drawing.Size(235, 80)
+        Me.GupBxOutCome.TabIndex = 52
+        Me.GupBxOutCome.TabStop = False
+        Me.GupBxOutCome.Text = "OutCome"
+        '
+        'GupBxPlyr2
+        '
+        Me.GupBxPlyr2.Controls.Add(Me.btnPlyr2Stats)
+        Me.GupBxPlyr2.Controls.Add(Me.Plyr2Weapon)
+        Me.GupBxPlyr2.Location = New System.Drawing.Point(168, 12)
+        Me.GupBxPlyr2.Name = "GupBxPlyr2"
+        Me.GupBxPlyr2.Size = New System.Drawing.Size(75, 118)
+        Me.GupBxPlyr2.TabIndex = 53
+        Me.GupBxPlyr2.TabStop = False
+        Me.GupBxPlyr2.Text = "Player2"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btnActionPlyr1)
+        Me.GroupBox1.Controls.Add(Me.btnPlyr1Stats)
+        Me.GroupBox1.Controls.Add(Me.Plyr1Weapon)
+        Me.GroupBox1.Location = New System.Drawing.Point(8, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(75, 118)
+        Me.GroupBox1.TabIndex = 54
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Player1"
+        '
+        'btnActionPlyr1
+        '
+        Me.btnActionPlyr1.Location = New System.Drawing.Point(0, 77)
+        Me.btnActionPlyr1.Name = "btnActionPlyr1"
+        Me.btnActionPlyr1.Size = New System.Drawing.Size(75, 23)
+        Me.btnActionPlyr1.TabIndex = 41
+        Me.btnActionPlyr1.Text = "Attacks"
+        Me.btnActionPlyr1.UseVisualStyleBackColor = True
+        '
         'battle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(247, 135)
-        Me.Controls.Add(Me.pbrPlyr1P)
-        Me.Controls.Add(Me.pbrPlyr2P)
-        Me.Controls.Add(Me.LblPain)
-        Me.Controls.Add(Me.LblEP)
-        Me.Controls.Add(Me.lblPlyr1EP)
-        Me.Controls.Add(Me.lblPlyr2EP)
-        Me.Controls.Add(Me.LblHlth)
+        Me.ClientSize = New System.Drawing.Size(247, 249)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GupBxPlyr2)
+        Me.Controls.Add(Me.GupBxOutCome)
         Me.Controls.Add(Me.btnReset)
-        Me.Controls.Add(Me.Plyr2Weapon)
-        Me.Controls.Add(Me.Plyr1Weapon)
-        Me.Controls.Add(Me.btnPlyr2Stats)
-        Me.Controls.Add(Me.btnPlyr1Stats)
-        Me.Controls.Add(Me.lblPlyr1Hlth)
-        Me.Controls.Add(Me.lblPlyr2Hlth)
         Me.Controls.Add(Me.btnFight)
         Me.Name = "battle"
         Me.Text = "battle"
+        Me.GupBxOutCome.ResumeLayout(False)
+        Me.GupBxOutCome.PerformLayout()
+        Me.GupBxPlyr2.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnFight As Button
@@ -220,4 +270,8 @@ Partial Class battle
     Friend WithEvents LblPain As Label
     Friend WithEvents pbrPlyr2P As ProgressBar
     Friend WithEvents pbrPlyr1P As ProgressBar
+    Friend WithEvents GupBxOutCome As GroupBox
+    Friend WithEvents GupBxPlyr2 As GroupBox
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnActionPlyr1 As Button
 End Class
